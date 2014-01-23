@@ -5,7 +5,7 @@ I wrote up a few scripts that make my life easier while working on CS223 assignm
 
 ## Suggested installation steps
 1. Create a folder (say, `~/scripts`). Clone/download this repository into it.
-2. Add the folder to PATH in your `.bash_profile` and/or `.profile` (I'm unsure which one).
+2. Optional: Add this folder to PATH in your `.bash_profile`, so that you can call the scripts without writing out their full path (e.g. `submit.sh` instead of `~/scripts/submit.sh`).
 
 ## Scripts
 All the following scripts assume the following:
