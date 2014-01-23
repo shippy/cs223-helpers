@@ -11,7 +11,7 @@ I wrote up a few scripts that make my life easier while working on CS223 assignm
 All the following scripts assume the following:
 
 1. You call them from the folder that contains your executable;
-2. Your folder contains the numeral that identifies the homework in question (i.e. "Hwk2/";
+2. Your folder contains the numeral that identifies the homework in question (i.e. `Hwk2/` or `hw1/`);
 3. Your folder only contains one executable, whose name is the same as the assignment name.
 
 That is how it gleans the information it needs to automate using Stan's scripts.
