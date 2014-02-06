@@ -27,7 +27,6 @@ do
 		## Compare submission time and last-modified timestamp of file in folder
 		# Get datetime of submission & last-modified
 		server_datetime=$(/c/cs223/bin/check $hw_n | grep $f | egrep -o '([A-Z][a-z]{2} [ 0-9]{2} [ 0-9]{2}:[0-9]{2})')
-		echo ${server_datetime}
 		local_datetime=$(date -r $f "+%h %d %R") 
 
 		# Convert to timestamp for easy comparison
@@ -40,8 +39,8 @@ do
 
 		if [[ $server_stamp -lt $local_stamp ]]
 		then
-			echo "-> Submitting $f!"
-			#/c/cs223/bin/submit $hw_n $f
+		#	echo "-> Submitting $f!"
+			/c/cs223/bin/submit $hw_n $f
 		else
 			echo "-> Server version of $f is up to date."
 		fi
